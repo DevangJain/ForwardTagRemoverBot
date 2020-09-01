@@ -32,11 +32,6 @@ func Start(b ext.Bot, u *gotgbot.Update) error {
 		Url:  "https://t.me/Devajebots",
 	}
 
-	startButton[1][0] = ext.InlineKeyboardButton{
-		Text: "How to create a bot like me?",
-		Url:  "https://www.youtube.com/watch?v=swg6un2N4Fk&feature=youtu.be",
-	}
-
 	markup := ext.InlineKeyboardMarkup{InlineKeyboard: &startButton}
 
 	msg := b.NewSendableMessage(u.EffectiveChat.Id, fmt.Sprintf("Hi [%s](tg://user?id=%v)\nI am A Forward Tag remover Bot.Send /help To Know What I Can Do", u.EffectiveUser.FirstName, u.EffectiveUser.Id))
