@@ -32,7 +32,7 @@ func Help(b ext.Bot, u *gotgbot.Update) error {
 
 	helpButton[1][0] = ext.InlineKeyboardButton{
 		Text: "Report a Bug 🔧",
-		Url:  "https://t.me/Devajesupport",
+		Url:  "https://t.me/Devajegroup",
 	}
 
 	markup := ext.InlineKeyboardMarkup{InlineKeyboard: &helpButton}
