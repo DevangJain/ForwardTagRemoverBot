@@ -37,7 +37,7 @@ func Help(b ext.Bot, u *gotgbot.Update) error {
 
 	markup := ext.InlineKeyboardMarkup{InlineKeyboard: &helpButton}
 
-	msg := b.NewSendableMessage(u.EffectiveChat.Id, "Forward Me A File,Video,Audio,Photo or Anything And \nI will Send You the File Back\n\n`How to Set Caption?`\nReply Caption to a File,Photo,Audio,Media")
+	msg := b.NewSendableMessage(u.EffectiveChat.Id, "Forward me any File,Video,Audio,Photo or Anything And \nI will Send You the File Back\n\n`How to Set Caption?`\nReply your Caption to a File,Photo,Audio,Media\nIf You want any Support Join Our Support Group 😊")
 	msg.ReplyToMessageId = u.EffectiveMessage.MessageId
 	msg.ReplyMarkup = &markup
 	msg.ParseMode = parsemode.Markdown
